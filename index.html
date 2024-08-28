@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="logotipo">
+        <img class="logotipo__alura" src="little_a.png" alt="Logo alura">
+        
+    </section>
+
+    <main class="main">
+        
+       
+        <section class="textarea">
+            <textarea style="resize: none; background-color: transparent" class="textarea__input" placeholder="Digite seu texto aqui.." id="texto-digitado"></textarea>
+ 
+            <div class="aviso">
+                <img class="aviso__icon" src="ponto_exclamacao.png">
+                <label class="aviso__text">Somente letras minúsculas e sem acento</label>
+            </div>
+
+            <div class="botoes">
+                <button class="botao__criptografar" onClick="criptografarTexto()" id="bnt-criptografar">Criptografar</button>
+
+                <button class="botao__descriptografar" onClick="descriptografarTexto()" id="btn-descriptografar">Descriptografar</button>
+            </div>
+           
+        </section>
+        
+        <section class="resultado">
+
+            <div class="resultado__div">
+                <div class="personagem" id="img" > 
+                    <img class="personagem__icon" src="person_looking.png" alt="Personagem procurando algo com uma lupa">  
+                </div>
+                
+                <textarea readonly="true" class="resultado__text" style="display:none; resize: none" id="texto_resultado"></textarea>
+                <div class="resultado__botoes">
+                    <button class="botao__copiar" onClick="copiarTexto()" style="display:none" id="btn-copiar">Copiar</button>
+                    <button class="botao__limpar" onClick="limparConteudo()" style="display:none" id="btn-limpar">Limpar</button>
+                </div>
+            </div>
+
+            
+          </section> 
+          
+    </main>        
+    
+</body>
+
+
+
+
+  </html>

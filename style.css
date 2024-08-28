@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baskervville SC', serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F8FC;
+}
+
+.main {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 70%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.logotipo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logotipo__alura {
+    width: Hug (120px)px;
+    height: Hug (48px)px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+    opacity: 0px;
+
+}
+
+.textarea {
+    padding: 40px;
+    width: 50%;
+    background-color: #F1F4FC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textarea__input {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    border: 2px solid #E0E4EB;
+    border-radius: 10px;
+    color: #4A4A4A;
+    background-color: #F7F8FC;
+}
+
+.aviso {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.aviso__icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.aviso__text {
+    color: #A0A4A8;
+    font-size: 14px;
+}
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.botao__criptografar, .botao__descriptografar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao__criptografar {
+    background-color: #1E40AF;
+    color: #FFFFFF;
+}
+
+.botao__descriptografar {
+    background-color: #E0E4EB;
+    color: #1E40AF;
+    border: 2px solid #1E40AF;
+}
+
+.resultado {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.resultado__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.personagem__icon {
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 1032px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.resultado__text {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    border: 2px solid #E0E4EB;
+    border-radius: 10px;
+    color: #4A4A4A;
+    background-color: #F7F8FC;
+
+    
+}
+
+.resultado__botoes {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.botao__copiar, .botao__limpar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1E40AF;
+    color: #FFFFFF;
+}
+
+.botao__criptografar, .botao__descriptografar, .botao__copiar, .botao__limpar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.botao__criptografar:hover {
+    background-color: #162D7C; 
+}
+
+.botao__descriptografar:hover {
+    background-color: #1E40AF; 
+    color: #FFFFFF; /* Texto branco no hover */
+}
+
+.botao__copiar:hover {
+    background-color: #162D7C; 
+}
+
+.botao__limpar:hover {
+    background-color: #162D7C;
+}
